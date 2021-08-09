@@ -15,7 +15,7 @@ class BelajarGsuiteApplicationTests {
 
 	@Test
 	void testListUsers() throws Exception {
-		Users users = gSuiteAdminService.listUsers();
+		Users users = gSuiteAdminService.listUsers(3);
 		for (User u : users.getUsers()) {
 			System.out.println("Customer ID : " + u.getCustomerId());
 			System.out.println("Full name : " + u.getName().getFullName());
